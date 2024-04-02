@@ -1,0 +1,47 @@
+* {
+    font-family: sahel-regular;
+}
+
+hr {
+    margin: .4em auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sahel-semibold;
+}
+
+.icon-home,
+.icon-user,
+.icon-power,
+.icon-password {
+    cursor: pointer;
+}
+.icon-power,
+.icon-password{
+    color: var(--disabled-icon-color);
+    cursor: default;
+}
+.row>.col-2.p-0:first-child {
+    /**Icon-user Container*/
+    width: max-content;
+}
+
+.row>.col-2.p-0 {
+    margin: auto .5em;
+}
+
+.d-flex.flex-row-reverse.justify-content-start>.icon-password,
+.d-flex.flex-row>.icon-home {
+    margin-left: .7em;
+}
+
+.col.d-flex.flex-column.p-0 {
+    /**Admin Status*/
+    font-size: .7em;
+
+}

@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+:host {
+    font-size: 14px !important;
+}
+:root {
+    --background-color: #dfe3e9;
+    --hoverMain-color: #838383;
+    --disabled-icon-color: #8a8a8a;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: sahel-regular
+}
+
+@font-face {
+    font-family: sahel-regular;
+    src: url(assets/fontes/Sahel.ttf);
+    src: url(assets/fontes/Sahel.woff);
+    src: url(assets/fontes/Sahel.woff2);
+    src: url(assets/fontes/Sahel-FD.ttf);
+    src: url(assets/fontes/Sahel-FD.woff);
+    src: url(assets/fontes/Sahel-FD.woff2);
+}
+
+@font-face {
+    font-family: sahel-semiBold;
+    src: url(assets/fontes/sahel-SemiBold.ttf);
+    src: url(assets/fontes/sahel-SemiBold.woff);
+    src: url(assets/fontes/sahel-SemiBold.woff2);
+    src: url(assets/fontes/sahel-SemiBold-FD.ttf);
+    src: url(assets/fontes/sahel-SemiBold-FD.woff);
+    src: url(assets/fontes/sahel-SemiBold-FD.woff2);
+}
+
+@font-face {
+    font-family: sahel-light;
+    src: url(assets/fontes/sahel-Light.ttf);
+    src: url(assets/fontes/sahel-Light.woff);
+    src: url(assets/fontes/sahel-Light.woff2);
+    src: url(assets/fontes/sahel-Light-FD.ttf);
+    src: url(assets/fontes/sahel-Light-FD.woff);
+    src: url(assets/fontes/sahel-Light-FD.woff2);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: sahel-bold;
+    src: url(assets/fontes/sahel-Bold.ttf);
+    src: url(assets/fontes/sahel-Bold.woff);
+    src: url(assets/fontes/sahel-Bold.woff2);
+    src: url(assets/fontes/sahel-Bold-FD.ttf);
+    src: url(assets/fontes/sahel-Bold-FD.woff);
+    src: url(assets/fontes/sahel-Bold-FD.woff2);
+    font-weight: bold;
+}

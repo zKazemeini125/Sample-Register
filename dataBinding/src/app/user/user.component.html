@@ -1,0 +1,25 @@
+<form>
+    <h5 class="mb-1">اطلاعات عضو جدید را وارد کنید</h5>
+    <!--name-->
+    <div class="mb-1">
+        <label for="exampleInputEmail1" class="form-label">نام</label>
+        <input type="text" class="form-control" #name id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+    </div>
+    <!--telphone number-->
+    <div class="mb-1">
+        <label for="exampleInputPassword1" class="form-label">شماره تماس</label>
+        <input type="tel" class="form-control" #cellnumber
+            id="exampleInputPassword1">
+    </div>
+    <!--e-mial-->
+    <div class="mb-1">
+        <label for="exampleInputPassword1" class="form-label">ایمیل</label>
+        <input type="email" class="form-control" #email
+            id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary mb-3 mt-1"
+        (click)="onAddUser(name.value, cellnumber.value, email.value, $event)">عضو
+        جدید</button>
+    <app-users-table [usersTb]="users"></app-users-table>
+</form>

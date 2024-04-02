@@ -1,0 +1,63 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">نام</th>
+      <th scope="col">شماره تماس</th>
+      <th scope="col">ایمیل</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of usersTb; let i=index;">
+      <th scope="row">{{i+1}}</th>
+      <td>
+        <input type="text" name="name" [(ngModel)]="user.name"
+          [readOnly]="!user.isEdited">
+      </td>
+      <td>
+        <input type="tel" name="name" [(ngModel)]="user.cellNumber"
+          [readOnly]="!user.isEdited">
+      </td>
+      <td>
+        <input type="email" name="name" [(ngModel)]="user.email"
+          [readOnly]="!user.isEdited">
+      </td>
+      <td>
+        <button type="button" *ngIf="!user.isEdited"
+          (click)="onEditClick(user)"> <i
+            class="fa-regular fa-pen-to-square"></i></button>
+        <button type="button" *ngIf="user.isEdited"
+          (click)="onSaveClick(user,i)"> <i
+            class="fa-solid fa-check"></i></button>
+        <button type="button" *ngIf="user.isEdited"
+          (click)="onCancleClick(user)"> <i
+            class="fa-solid fa-xmark"></i></button>
+      </td>
+      <!--?ادیت تمام ستونها با یک دکمه-->
+      <!-- <th scope="row">{{i+1}}</th>
+      <ng-container *ngIf="isEdited; else edit">
+        <td>{{user.name}}</td>
+        <td>{{user.cellNumber}}</td>
+        <td>{{user.email}}</td>
+        <td>
+          <button type="button" (click)="onEditClick()">
+            <i class="fa-regular fa-pen-to-square"></i></button></td>
+      </ng-container>
+      <ng-template #edit>
+        <td>
+          <input #name type="text" value={{user.name}}>
+        </td>
+        <td>
+          <input #number type="tel" value={{user.cellNumber}}>
+        </td>
+        <td><input #email type="email" value={{user.email}}>
+        </td>
+        <td>
+          <button type="button" (click)="onEditClick()"><i class="fa-solid fa-xmark"></i></button>
+          <button type="button" (click)="onAcceptEdit(i ,name.value, number.value, email.value)"><i class="fa-solid fa-check"></i></button>
+        </td>
+      </ng-template> -->
+    </tr>
+  </tbody>
+</table>

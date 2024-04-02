@@ -1,0 +1,36 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-2 p-0">
+      <div class="d-flex flex-row">
+        <div class="icon-home" routerLink="/home">
+          <i class="fa-solid fa-house fa-lg"></i>
+        </div>
+        <div class="icon-user" routerLink="/user">
+          <i class="fa-regular fa-user fa-lg"
+            style="color: rgb(0, 0, 0);"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex flex-column p-0">
+      <div class="d-flex flex-row">
+        <div class="name mx-1">علیرضا </div>
+        <div class="title mx-1 text-secondary"><b>سوپر ادمین</b></div>
+      </div>
+      <div class="status mx-1 text-info">غیر فعال</div>
+    </div>
+    <div class="col-2 p-0">
+      <div class="d-flex flex-row-reverse justify-content-start">
+        <div class="icon-power" routerLink="logOut">
+          <i class="fa-solid fa-power-off fa-lg"></i>
+        </div>
+        <div des class="icon-password" routerLink="/password">
+          <i class="fa-solid fa-key fa-lg"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="row mt-2">
+    <router-outlet></router-outlet>
+  </div>
+</div>
