@@ -54,13 +54,13 @@ export class CarouselDirective implements OnInit {
       this.context.activeSlide = this.index;
     }
   }
-  public autoplay(): void {
-    this.timer = setInterval(()=>{
-      this.nextSlid();
-    }, 1000);
-  }
+  // public autoplay(): void {
+  //   this.timer = setInterval(()=>{
+  //     this.nextSlid();
+  //   }, 1000);
+  // }
 
-  public clearAutoPlay(): void {
-    clearInterval(this.timer);
-  }
+  // public clearAutoPlay(): void {
+  //   clearInterval(this.timer);
+  // }
 }
